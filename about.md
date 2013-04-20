@@ -6,20 +6,20 @@ group: navigation
 ---
 {% include JB/setup %}
  
-## About me
+## 介绍我
 
-**Name** : **Shaw**
+**简介** : **Shaw, 男**
 
-**喜** : `小米粥`, `hack`, `ruby`, `data`, `瘦` 
+- **喜** : `小米粥`, `hack`, `ruby`, `data`, `maths`, `design`, `老罗`, `Apple`
 
-**怒** : `断网`, `GFW`, `百度`, `人人`, `开班会`
+- **怒** : `断网`, `GFW`, `百度`, `某产Party`, `开会`, `有人吵`,
 
-**哀** : `世风日下`, `道德沦丧`, `脑残遍野`
+- **哀** : `瘦`, `**不够**帅`
 
-**乐** :
+- **乐** : `自由支配时间`, `头脑清醒`, 
 
 
-## Contact
+## 联系我
 
 I like making new friends who have similar interest in Computer
 Science stuff. So, please don't hesitate in contacting me either to
