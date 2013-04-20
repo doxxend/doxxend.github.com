@@ -8,11 +8,12 @@ group: navigation
  
 ## About me
 
+
 Name: **Shaw**
 
-UP: `hack`, `ruby`, `data`, `瘦` 
+喜: `hack`, `ruby`, `data`, `瘦` 
 
-DOWN: `断网`, `GFW`, `百度`, `人人`
+恶: `断网`, `GFW`, `百度`, `人人`
 
 
 ## Contact
