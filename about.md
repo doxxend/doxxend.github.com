@@ -6,10 +6,10 @@ group: navigation
 ---
 {% include JB/setup %}
  
+## About me
 
-
-## About the Website
-
+Name: Shaw 
+About: `hack`,`ruby`,`data`,`瘦` 
 
 
 ## Contact
