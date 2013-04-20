@@ -10,7 +10,7 @@ group: navigation
 
 Name: **Shaw**
 
-About: `hack`,`ruby`,`data`,`瘦` 
++: `hack`,`ruby`,`data`,`瘦` 
 
 
 ## Contact
