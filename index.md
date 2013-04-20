@@ -7,7 +7,7 @@ tagline:
 {% include JB/setup %}
 
 
-# 你能找到什么？
+### 你能找到什么？
 ---
 
 
@@ -15,7 +15,7 @@ tagline:
 <br />
 <br />
 
-# 最新文章
+#### 最新文章
 ---
 <!--- ALTERNATIVE TO SHOW POSTS
 {% for post in site.posts %}
