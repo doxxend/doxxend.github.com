@@ -8,8 +8,7 @@ group: navigation
  
 ## About me
 
-
-### Name: **Shaw**
+Name: **Shaw**
 
 UP: `hack`, `ruby`, `data`, `瘦` 
 
