@@ -7,16 +7,15 @@ tagline:
 {% include JB/setup %}
 
 
-### 你能找到什么？
+### 公告板
 ---
-
-- [ ] a task list item
-- [ ] list syntax required
-- [ ] normal **formatting**, @mentions, #1234 refs
-- [ ] incomplete
-- [x] completed
+#### 这个网站负责存放我的[文章](pages/wiki.html)以及我认为值得分享的[资源](archieve.html)。绝大部分内容不适合: `脑残90后，没出息的大学生，不解风情的人`阅读。
 
 <br />
+#### 如有冒犯，正合我意。
+
+
+
 <br />
 
 ### 最新文章
