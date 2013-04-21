@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Wiki"
+title: "资源"
 description: "Resources worth spreading"
 group: navigation
 ---
