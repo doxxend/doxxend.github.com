@@ -1,0 +1,8 @@
+---
+layout: post
+title: "scheme on macosx"
+description: ""
+category: 
+tags: []
+---
+{% include JB/setup %}
