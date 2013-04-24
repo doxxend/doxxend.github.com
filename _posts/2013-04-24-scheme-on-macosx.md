@@ -8,10 +8,12 @@ tags: [scheme]
 {% include JB/setup %}
 
 ## 0.前言
+---
 强烈建议先阅读[王垠的教程](http://www.yinwang.org/blog-cn/2013/04/11/scheme-setup/)。我的教程是对他的补充。
 <br>
 
 ## 1.安装Scheme
+---
 我用的Scheme解释器是`Racket`, [点这里下载](http://racket-lang.org/download/)。进入页面后选择`Mac OS X (Intel 64-bit)`，下载一个`racket-5.3.3-bin-x86_64-osx-mac.dmg`文件(**注意：你应该依照你的情况进行下载**)。下载成功后，把`Racket v5.3.3`拖到`Applications`。打开`Terminal`终端，执行：
 
     ln -s /Applications/Racket\ v5.3.3/bin/racket /usr/bin/racket
@@ -19,6 +21,7 @@ tags: [scheme]
 现在你在`Terminal`输入：`racket`即可启动它。当然你也可以通过`设置$PATH`来达到在`终端`启动`Racket`的目的。
 
 ## 2.配置Emacs
+---
 参照[王垠的教程](](http://www.yinwang.org/blog-cn/2013/04/11/scheme-setup/)。在你的`.emacs`文件里加入如下代码：
 
 	;;;;;;;;;;;;
@@ -76,7 +79,9 @@ tags: [scheme]
     (define-key scheme-mode-map (kbd "<f6>") 'scheme-send-definition-split-window)))
 
 ## 3.完成
+---
 在你的Emacs里按`M X run-scheme`，即可调出Racket。
 
 ## 4.结语
+---
 在[王垠的教程](http://www.yinwang.org/blog-cn/2013/04/11/scheme-setup/)里还涉及到`Paredit mode`以及`设置括号颜色`，你可以参考他的文章来配置，非常简单。另外，他其他的其他文章也非常值得一读。
