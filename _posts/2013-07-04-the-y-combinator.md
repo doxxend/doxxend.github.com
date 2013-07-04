@@ -11,17 +11,19 @@ tags: ["y combinator"]
 ---
 This is the derivation of the Y-Combinator from scratch, in scheme. The following derivation uses a different approach from many other articles. While others often begin with some examples, I begin with the essence.  
 
+
 ## The essence of the Y-Combinator
 ---
 The essence of the Y combinator is that it's a [fixed-point](http://en.wikipedia.org/wiki/Fixed_point_(mathematics) combinator, which is a higher-order function that `consumes a function` and `computes a fixed point of it`.
 
 Suppose `f(x) = x`, `x` is the fixed point of `f`.  
 
-We have `x = f(x) = f(f(x)) = f(f(f(x))) = f(...(f(f(f(x)))))`
+We have `x = f(x) = f(f(x)) = f(f(f(x))) = f(...(f(f(f(x)))))`  
+
 
 ## Derivation
 ---
-Again here, that `the Y combinator consumes a function and computes a fixed point of it`. With this in your mind, we can begin.
+Again here, that `the Y combinator consumes a function and computes a fixed point of it`. With this in mind, we can begin.
 
 In scheme, to represent a fixed point of a function, We could write:  
 
@@ -33,7 +35,7 @@ Because `x` is unbound(within a combinator, all of the variables are bound), we 
 
     (lambda (x) (f x))
 		
-Since `(f x)` is the fixed point of `f`, we call the function above the `fixed point maker`(which take the fixed point of `f` as an argument and return the fixed point of it(sounds a bit strange)).
+Since `(f x)` is the fixed point of `f`, we call the function above the `fixed point maker`(which takes the fixed point of `f` as an argument and return the fixed point of it(sounds a bit strange)).
 
 However, We haven't got the fixed point of `f`, so we cannot pass it to the `fixed point maker`. We must be smarter.
 
@@ -47,13 +49,13 @@ becomes
 
     (lambda (m) (f (m ??)))
 	
-where `m` is a fixed point maker, `(lambda (m) (f (m ??)))` is also a fixed point maker, which consumes a fixed point maker...
+where `m` is a fixed point maker. `(lambda (m) (f (m ??)))` is also a fixed point maker, which consumes a fixed point maker...
 
-Now, the fixed point maker consumes a fixed point maker, `(m ??)` becomes `(m m)`. We get:
+Now, the fixed point maker consumes a fixed point maker, so `(m ??)` becomes `(m m)`. We get:
 
     (lambda (m) (f (m m)))
 
-which is a fixed point maker. Applying it to itself(a fixed point maker consumes a fixed point maker to make a fixed point), we get:
+which is a fixed point maker. Applying it to itself`a fixed point maker consumes a fixed point maker to make a fixed point`, we get:
 
     ((lambda (m) (f (m m)))
 	 (lambda (m) (f (m m))))
@@ -61,6 +63,10 @@ which is a fixed point maker. Applying it to itself(a fixed point maker consumes
 which is the fixed point of `f`.  
 
 Now the only unbound variable is `f`, we simply do:
+
+	(lambda (f)
+		((lambda (m) (f (m m)))
+	     (lambda (m) (f (m m)))))
 
 The above function is the Y combinator. We give it a name `Y` with `define`:
 
