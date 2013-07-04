@@ -11,7 +11,7 @@ group: navigation
 
  **[我]** : **Shaw, 男**
 
- **[喜]** : `小米粥`, `hack`, `ruby`, `data`, `mathematica`, `emacs`, `设计`, `google`, `老罗`, `苹果产品`, `香芋派`
+ **[喜]** : `小米粥`, `hack`, `lisp`, `data`, `mathematica`, `emacs`, `设计`, `google`, `老罗`, `苹果产品`, `香芋派`
 
  **[怒]** : `断网`, `GFW`, `百度`, `某产Party`, `开会`, `吵`, `装Geek`, `文凭`
 
@@ -26,9 +26,9 @@ group: navigation
 
 ## 联系我
 ---
-**新浪微博: @doxxend**
+**新浪微博: @黑车斯基**
 
-**Email: do.xx.end ~AT~ gmail.com**
+**Email: x.py ~AT~ outlook.com**
 
 
 
