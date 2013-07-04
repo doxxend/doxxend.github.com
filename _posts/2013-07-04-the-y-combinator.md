@@ -66,7 +66,7 @@ Now the only unbound variable is `f`, we simply do:
 
 	(lambda (f)
 		((lambda (m) (f (m m)))
-	     (lambda (m) (f (m m)))))
+		 (lambda (m) (f (m m)))))
 
 The above function is the Y combinator. We give it a name `Y` with `define`:
 
