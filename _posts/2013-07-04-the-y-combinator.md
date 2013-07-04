@@ -77,7 +77,7 @@ The above function is the Y combinator. We give it a name `Y` with `define`:
 			 
 We've almost finish here. The only problem is that the Y combinator above is of `normal-order`, which doesn't work for strict language. Because in such a language, when we pass `(m m)` to `f` in the expression `(f (m m))`, the evalution of `(m m)` will never terminate.
 		 
-However, there is a clever hack here. Suppose the fixed point of `f` is a function that takes only one argument.(It doesn't matter how many arguments it takes). Because `(m m)` is the fixed point of `f`, it takes one argument. So,
+>However, there is a clever hack here. Suppose the fixed point of `f` is a function that takes only one argument.(It doesn't matter how many arguments it takes). Because `(m m)` is the fixed point of `f`, it takes one argument. So,
 
     (m m) = (lambda (y) ((m m) y))
 	
@@ -94,5 +94,7 @@ then we get the `applicative-order Y combinator`:
 
 
 ##Further reading
+---  
+
 * [The Y Combinator (Slight Return) by mvanier](http://mvanier.livejournal.com/2897.html)
 * [Y-Combinator(Based on work by Jim Marshall)](http://dangermouse.brynmawr.edu/cs245/ycomb_jim.html)
