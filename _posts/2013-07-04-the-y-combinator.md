@@ -49,13 +49,13 @@ becomes
 
     (lambda (m) (f (m ??)))
 	
-where `m` is a fixed point maker. `(lambda (m) (f (m ??)))` is also a fixed point maker, which consumes a fixed point maker...
+where `m` is a fixed point maker. `(lambda (m) (f (m ??)))` is also a fixed point maker, which takes a fixed point maker as an argument...
 
 Now, the fixed point maker consumes a fixed point maker, so `(m ??)` becomes `(m m)`. We get:
 
     (lambda (m) (f (m m)))
 
-which is a fixed point maker. Applying it to itself`a fixed point maker consumes a fixed point maker to make a fixed point`, we get:
+which is a fixed point maker. Applying it to itself`(a fixed point maker consumes a fixed point maker to make a fixed point)`, we get:
 
     ((lambda (m) (f (m m)))
 	 (lambda (m) (f (m m))))
@@ -75,7 +75,7 @@ The above function is the Y combinator. We give it a name `Y` with `define`:
 			((lambda (m) (f (m m)))
 			 (lambda (m) (f (m m))))))
 			 
-We've almost finish here. The only problem is that the Y combinator above is of `normal-order`, which doesn't work for strict language. Because in such a language, when we pass `(m m)` to `f` in the expression `(f (m m))`, the evalution of `(m m)` will never terminate.
+We've almost finished here. The only problem is that the Y combinator above is of `normal-order`, which doesn't work for strict language. Because in such a language, when we pass `(m m)` to `f` in the expression `(f (m m))`, the evalution of `(m m)` will never terminate.
 		 
 However, there is a clever hack here. Suppose the fixed point of `f` is a function that takes only one argument.(It doesn't matter how many arguments it takes). Because `(m m)` is the fixed point of `f`, it takes one argument. So,
 
