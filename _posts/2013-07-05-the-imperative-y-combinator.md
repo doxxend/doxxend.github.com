@@ -3,7 +3,7 @@ layout: post
 title: "The imperative Y Combinator"
 description: ""
 category: 
-tags: ["y combinator" "imperative"]
+tags: ["y combinator"]
 ---
 {% include JB/setup %}
 
