@@ -1,21 +1,10 @@
 ---
 layout: page
-title: Home
+title: Shaw's
 tabify: h2
 tagline: 
 ---
 {% include JB/setup %}
-
-
-### 公告板
----
-#### 这个网站负责存放我的[文章](archive.html)以及我认为值得分享的[资源](pages/wiki.html)。
-
-<br />
-
-
-
-<br />
 
 ### 最新文章
 ---
