@@ -99,4 +99,4 @@ then we get the `applicative-order Y combinator`:
 
 * [The Y Combinator (Slight Return) by mvanier](http://mvanier.livejournal.com/2897.html)
 * [Y-Combinator(Based on work by Jim Marshall)](http://dangermouse.brynmawr.edu/cs245/ycomb_jim.html)
-* [The imperative Y combinator]("the-imperative-y-combinator")
+
