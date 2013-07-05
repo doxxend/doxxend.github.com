@@ -23,7 +23,7 @@ We've known the true that `f(g) = g`. To get `g`, we just set `g` to `f(g)`. So 
     (lambda (f)
       (let ((fixed-point 'dull))
 	    (set! fixed-point 
-			(f fixed-point))
+		   (f fixed-point))
 		  fixed-point))
 			
 However, when we apply the function above to a function `f`, actually we get:
