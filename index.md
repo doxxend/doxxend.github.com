@@ -1,13 +1,11 @@
 ---
 layout: page
 title: Shaw's
-tabify: h2
+tabify: 
 tagline: 
 ---
 {% include JB/setup %}
 
-### 最新文章
----
 <!--- ALTERNATIVE TO SHOW POSTS
 {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span>  : <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
