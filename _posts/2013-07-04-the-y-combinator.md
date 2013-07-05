@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Y Combinator"
+title: "The functional Y Combinator"
 description: ""
 category: 
 tags: ["y combinator"]
