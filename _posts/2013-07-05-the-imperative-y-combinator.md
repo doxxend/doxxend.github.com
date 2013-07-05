@@ -7,6 +7,7 @@ tags: [y combinator, imperative]
 ---
 {% include JB/setup %}
 
+
 **If you don't know what the Y combinator is, you should read [this artical]("the-y-combinator") first.**
 
 ## Derivation
@@ -139,7 +140,4 @@ So
     When we use the imperative Y combinator, we should be very careful!
 	
 	
-
-
-
-
+Hello?
