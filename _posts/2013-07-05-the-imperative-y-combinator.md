@@ -21,10 +21,10 @@ where `f` is the funcion, `Y` is the combinator, and `g` is the fixed point of `
 We've known the true that `f(g) = g`. To get `g`, we just set `g` to `f(g)`. So we try:
 
     (lambda (f)
-		(let ((fixed-point 'dull))
-			(set! fixed-point 
-				  (f fixed-point))
-			fixed-point))
+      (let ((fixed-point 'dull))
+	    (set! fixed-point 
+			(f fixed-point))
+		  fixed-point))
 			
 However, when we apply the function above to a function `f`, actually we get:
 
@@ -37,10 +37,10 @@ The problem here is that the `fixed-point` inside the expression `(f fixed-point
 knowing that, we can easily modify the code to:
 
 	(lambda (f)
-		(let ((fixed-point 'dull))
+      (let ((fixed-point 'dull))
 			(set! fixed-point
-				(f (lambda (x) (fixed-point x))))
-			fixed-point))
+			  (f (lambda (x) (fixed-point x))))
+                fixed-point))
 			
 We assume that `fixed-point` is a function which takes only one argument. so we have:
 
@@ -51,11 +51,11 @@ Here, because `(fixed-point x)` is inside the lambda expression and will not eva
 Now, we give it a name `Y!` with `define`,
 
 	(define Y!
-		(lambda (f)
-			(let ((fixed-point 'dull))
-				(set! fixed-point
-					(f (lambda (x) (fixed-point x))))
-						fixed-point)))
+      (lambda (f)
+        (let ((fixed-point 'dull))
+              (set! fixed-point
+                (f (lambda (x) (fixed-point x))))
+                   fixed-point)))
 						
 and this is the imperative Y combinator.
 
@@ -95,7 +95,7 @@ Test function 1:
 Test function 2:
 
 	(define biz2
-		(let
+	  (let
 		 ((x 0))
 		  (lambda (f)
 			(lambda (a)
@@ -125,11 +125,11 @@ When we pass `biz2` to `Y!`, we get:
     (define x 'dull)
 		
 	(define biz2
-		(lambda (a)
-			(set! x (add1 x))  ;; Here we set the x!
-			(if (= a x)
-				0
-				(biz2 a))))
+	   (lambda (a)
+		 (set! x (add1 x))  ;; Here we set the x!
+			 (if (= a x)
+				 0
+				 (biz2 a))))
 				
 Do you notice the difference? 
 
