@@ -8,7 +8,7 @@ tags: [y combinator, imperative]
 {% include JB/setup %}
 
 
-**If you don't know what the Y combinator is, you should read [this artical]("the-y-combinator") first.**
+**If you don't know what the Y combinator is, you should read [this artical](the-y-combinator) first.**
 
 ## Derivation
 ---
