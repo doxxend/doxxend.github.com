@@ -96,13 +96,13 @@ Test function 2:
 
 	(define biz2
 		(let
-			((x 0))
-				(lambda (f)
-					(lambda (a)
-						(set! x (add1 x))
-							(if (= a x)
-								0
-								(f a))))))
+		 ((x 0))
+		  (lambda (f)
+			(lambda (a)
+			  (set! x (add1 x))
+				(if (= a x)
+					0
+					(f a))))))
 								
 If we apply `Y` to `biz1` or `biz2`, or apply `Y!` to `biz2`, there is no problem. We will get the result `0`.
 
@@ -135,8 +135,6 @@ Do you notice the difference?
 
     `biz1` never sets the `x`, but `biz2` do.
 	
-So 
-
-    When we use the imperative Y combinator, we should be very careful!
+When we use the imperative Y combinator, we should be very careful!
 	
 	
