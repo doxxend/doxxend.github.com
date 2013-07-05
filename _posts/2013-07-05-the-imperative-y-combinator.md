@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "the imperative y combinator"
+title: "The imperative Y Combinator"
 description: ""
 category: 
-tags: []
+tags: ["y combinator" "imperative"]
 ---
 {% include JB/setup %}
+
