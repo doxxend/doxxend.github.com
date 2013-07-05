@@ -2,7 +2,6 @@
 layout: page
 title: Shaw's
 tabify: 
-tagline: 
 ---
 {% include JB/setup %}
 
